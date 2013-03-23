@@ -1,0 +1,11 @@
+%form{:class => "dashboard_settings_form", :name => "settings_form", :enctype => "multipart/form-data", :method => "post", :action => "/dashboard/settings/upload"}
+	.settings_form_row{:id => "first_row"}
+		%label{:for => "display_name"}= "Name"
+		%input{:type => "text", :name => "display_name", :placeholder => "Your name", :data_required => "required", :id => "login_email_input", :value => $user.display_name != nil ? $user.display_name : ""}
+	.image_row
+		%label{:for => "display_image"}= "Profile picture"
+		.image_box
+			%input{:type => "file", :name => "display_image"}
+
+	.login_button_row
+		%input{:class => "login_button", :type => "submit", :value => "Save", :name => "do_welcome"}

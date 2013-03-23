@@ -1,0 +1,8 @@
+.row
+	.twocol
+	%div{:class => "tencol last"}
+		%h2 Models
+		%ul
+			- @object.model.properties.each do |property|
+				%li
+					#{property.name}: #{@object[property.name].to_s}

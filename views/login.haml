@@ -1,0 +1,19 @@
+.row
+	.twocol
+	%div{:class => "eightcol last"}
+		#login_div
+			%form{:name => "login_form"}
+				.login_form_textboxes
+					.login_form_row
+						%input{:type => "email", :name => "login_email", :placeholder => "email", :data_required => "required"}
+					.login_form_row
+						%input{:type => "password", :name => "login_password", :placeholder => "password", :data_required => "required"}
+				.login_form_row
+					%input{:type => "checkbox", :name => "login_register", :value => "0"}
+				.login_form_row
+					%input{:type => "submit", :value => "Login", :name => "do_login"}
+			%script
+				$(function() {
+				$("form[name=login_form]").submit(login);
+				});
+			

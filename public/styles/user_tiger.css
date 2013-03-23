@@ -1,0 +1,63 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+html {
+
+	height: 100%;
+}
+
+body {
+	
+	
+	height: 100%;
+	background-color: #fdf6e3;
+}
+
+
+
+
+#login_div .login_form_textboxes {
+	border: 1px solid;
+	width: 250px;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+
+.login_form_textboxes .login_form_row input {
+	width: 100%;
+	padding: 10px;
+	margin: 0;
+	font: bold 14px Helvetica;
+	border: 0;
+	background-color: #e4eeff;
+	box-sizing: border-box;
+}
+	
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media handheld, only screen and (max-width: 767px) {
+
+	body {
+		
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}

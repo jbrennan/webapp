@@ -1,0 +1,8 @@
+.row
+	.twocol
+	%div{:class => "tencol last"}
+		%h2 Models (really need to show a table of all attributes x all instances)
+		%ul
+			- @instances.each do |object|
+				%li
+					%a{:href => "/debug/#{@class_name}/#{object.id}"}= object.inspect

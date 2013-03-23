@@ -1,0 +1,13 @@
+.panel
+	%form{:class => "dashboard_login_form", :name => "login_form"}
+		.login_boxes
+			.login_form_row{:id => "first_row"}
+				%input{:type => "email", :name => "login_email", :placeholder => "email", :data_required => "required", :id => "login_email_input"}
+			.login_form_row
+				%input{:type => "password", :name => "login_password", :placeholder => "password", :data_required => "required"}
+		.login_button_row
+			%input{:class => "login_button", :type => "submit", :value => "Login", :name => "do_login"}
+		%script
+			$(function() {
+			$("form[name=login_form]").submit(login);
+			});

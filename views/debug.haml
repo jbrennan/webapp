@@ -1,0 +1,8 @@
+.row
+	.twocol
+	%div{:class => "tencol last"}
+		%h2 Models
+		%ul
+			- @models.each do |m|
+				%li
+					%a{:href => "debug/#{m.to_s}"}= m.to_s

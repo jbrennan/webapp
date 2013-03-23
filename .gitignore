@@ -1,0 +1,5 @@
+*.sqlite3
+public/user/*
+sinatra.log
+user_defaults
+Gemfile.lock

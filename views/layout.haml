@@ -1,0 +1,39 @@
+!!!5
+%html{:lang => "en"}
+	%head
+		%title= (Defaults[:site_name] ? Defaults[:site_name] : "")
+		%meta{:charset => "utf-8"}
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale = 1.0"}
+		%link{:rel => 'alternate',:type => "application/atom+xml", :href => "/index.xml"}
+		<!-- 1140px Grid styles for IE -->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/styles/ie.css" type="text/css" media="screen" /><![endif]-->
+		
+		%link{:rel=>'stylesheet', :href=>'/styles/1140.css', :media => "screen"}
+		- if @uses_custom_css == true
+			%link{:rel=>'stylesheet', :href=>'/user/files/custom_tiger.css', :media => "screen"}
+		- else
+			%link{:rel=>'stylesheet', :href=>'/styles/user_tiger.css', :media => "screen"}
+		
+		%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+		%script{:src => "/js/app.js"}
+		%script{:src => "/js/css3-mediaqueries.js"}
+	%body
+	
+		%section{:id => "mast", :class => "container"}
+			%header{:class => "row"}
+				.twocol
+				%a{:href => "/", :class => "mast_title tencol last"}
+					.site_mast_title_span= Defaults[:site_name] ? Defaults[:site_name] : "Colophon"
+		
+		%section{:id => "content", :class => "container"}
+			= yield
+		
+		<script type="text/javascript"> |
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); |
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E")); |
+		</script>
+		<script type="text/javascript"> |
+		try { |
+		var pageTracker = _gat._getTracker("UA-16172871-1"); |
+		pageTracker._trackPageview(); |
+		} catch(err) {}</script>

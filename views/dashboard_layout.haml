@@ -1,0 +1,47 @@
+!!!5
+%html{:lang => "en"}
+	%head
+		%title= (Defaults[:site_name] ? Defaults[:site_name] + " — Dashboard" : "Dashboard")
+		%meta{:charset => "utf-8"}
+		%meta{:name => "viewport", :content => "width=device-width, initial-scale = 1.0"}
+
+		<!-- 1140px Grid styles for IE -->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/styles/ie.css" type="text/css" media="screen" /><![endif]-->
+
+		%link{:rel=>'stylesheet', :href=>'/styles/1140.css', :media => "screen"}
+		%link{:rel=>'stylesheet', :href=>'/styles/dashboard_tiger.css', :media => "screen"}
+		
+		
+		%script{:src => "/js/text_utilities.js"}
+		%script{:src => "/js/prettify.js"}
+		%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"}
+		%script{:src => "/js/keymaster.js"}
+		%script{:src => "/js/app.js"}
+		%script{:src => "/js/css3-mediaqueries.js"}
+		
+	%body
+
+		%section{:id => @logging_in ? "lgging_in_content" : "content", :class => "container"}
+			- if @logging_in
+				= yield
+			- else
+				.row
+					%nav{:class => "threecol menu_class"}
+						.menu_box
+							.user_box
+$user.display_image_url}
+								.user_name_box
+$user.display_name
+						.menu_box
+							%ul{:class => "menu_list"}
+								%li{:id => "menu_list_first"}
+									text
+								%li
+									%a{:href => "/dashboard/settings"}= "Settings"
+								%li{:id => "menu_list_last"}
+									%a{:href => "/dashboard/trash"}= "Trash"
+						.bugfix
+							•••
+					%section{:class => "dashboard_content ninecol last"}
+						.dashboard_content_box
+							= yield

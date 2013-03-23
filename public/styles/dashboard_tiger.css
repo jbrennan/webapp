@@ -1,0 +1,663 @@
+/* ============================== */
+/* ! Layout for desktop version   */
+/* ============================== */
+
+html {
+	background-color: black;
+	background: url('/images/linen_edit.png');
+	box-shadow: inset 0 0 200px rgba(0,0,0,0.75);
+	min-height: 100%;
+	min-width: 100%;
+}
+
+body {
+	/* background: url('/images/linen_edit.png'); */
+	/* background-color: black; */
+	font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
+	min-height: 100%;
+	line-height: 1.3;
+	/* -webkit-gradient( radial, 50% 50%, 125, 50% 50%, 250, from(transparent), to(rgba(0, 0, 0, .5)) ) */
+}
+
+
+a {
+	text-decoration: none;
+}
+	
+	
+.dashboard_content_box p {
+	font-size: 16px;
+	line-height: 1.3; /* means line-height is 1.3 * 16px = 20.8px */
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+.dashboard_content_box br {
+	font-size: 16px;
+	line-height: 1.3; /* means line-height is 1.3 * 16px = 20.8px */
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+.dashboard_content_box ol,.dashboard_content_box  li {
+	font-size: 16px;
+	line-height: 1.3;
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+.dashboard_content_box time {
+	line-height: 1.3;
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+	color: #8f8f8f;
+	/* font-variant: small-caps; */
+}
+
+
+/*
+	Headers
+*/
+
+
+.dashboard_content_box h1 {
+	font-size: 18px;
+	/*	In order for each line to be 20.8px tall (the line-height as seen in p{})
+		I must divide 20.8px / h1.font-size to get the proper line height
+		ie 1.155em
+	*/
+	line-height: 1.155;
+	margin-top: 1.155em;
+	margin-bottom: 1.155em;
+
+}
+
+
+.dashboard_content_box h2 {
+	font-variant: small-caps;
+	font-weight: normal;
+	font-size: 18px;
+	/*	In order for each line to be 20.8px tall (the line-height as seen in p{})
+		I must divide 20.8px / h2.font-size to get the proper line height
+		ie 1.155em
+	*/
+	line-height: 1.155;
+	margin-top: 1.155em;
+	margin-bottom: 1.155em;
+}
+
+
+.dashboard_content_box h3 {
+	font-size: 16px;
+	/*	In order for each line to be 20.8px tall (the line-height as seen in p{})
+		I must divide 20.8px / h3.font-size to get the proper line height
+		ie 1.3em
+	*/
+	line-height: 1.3; /* means line-height is 1.3 * 16px = 20.8px */
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+.dashboard_content_box h4 {
+	font-size: 16px;
+	font-variant: small-caps;
+	font-weight: normal;
+	/*	In order for each line to be 20.8px tall (the line-height as seen in p{})
+		I must divide 20.8px / h4.font-size to get the proper line height
+		ie 1.3em
+	*/
+	line-height: 1.3; /* means line-height is 1.3 * 16px = 20.8px */
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+}
+
+
+.dashboard_content_box hr {
+	line-height: 1.3; /* means line-height is 1.3 * 16px = 20.8px */
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+	background-color: #cccccc;
+	border: none;
+	height: 1px;
+	margin-left: 1.3em;
+	margin-right: 1.3em;
+}
+
+
+
+.dashboard_content_box blockquote {
+	font-size: 16px;
+	line-height: 1.3;
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+	margin-left: 1.3em;
+	margin-right: 1.3em;
+
+	border-left: 1px dotted #8f8f8f;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.dashboard_content_box pre {
+	overflow:auto;
+}
+
+.dashboard_content_box code {
+	font-size: 0.9em;
+	font-weight: bold;
+	font-family: Menlo, Monaco, ProFont, "Bitstream Vera Sans Mono", Courier, "Andale Mono", monospace;
+	line-height: 1.3;
+	margin-top: 1.3em;
+	margin-bottom: 1.3em;
+
+}
+
+
+#lgging_in_content {
+	background-color: grey;
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	height: 0px;
+	overflow: visible;
+}
+
+.panel {
+	position: absolute;
+	background-color: white;
+	left: 50%;
+	margin-left: -139px; /* i.e., width/2 */
+	top: -99px; /* i.e., height/2 */
+	visibility: visible;
+	width: 278px;
+	height: 198px;
+	
+	
+	
+	border: 1px solid black;
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#faf7f7), to(#c8c7c7));
+	background-image: -webkit-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -moz-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -o-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -ms-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: linear-gradient(to bottom, #faf7f7, #c8c7c7);
+	-webkit-box-shadow: 0 5px 11px rgba(0,0,0,0.28);
+	-moz-box-shadow: 0 5px 11px rgba(0,0,0,0.28);
+	box-shadow: 0 5px 11px rgba(0,0,0,0.28);
+
+	
+	
+}
+
+.dashboard_login_form {
+	margin-left: 19px;
+	margin-right: 19px;
+	width: auto;
+}
+
+.login_boxes {
+/* Panel is 200px tall, the boxes are 80px tall total. 200-80=120px, so move the boxes down by 120/2=60 */
+	
+	/* top: 50%; */
+	margin-top: 60px; /* i.e., -height/2 */
+	height: 80px;
+	overflow: hidden;
+/* 	margin-left: 19px;
+	margin-right: 19px;
+	height: 80px;
+	width: auto; */
+	
+	border: 1px solid black;
+	border-radius: 10px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#f4f4f4), to(#ffffff));
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #ffffff);
+	background-image: -moz-linear-gradient(top, #f4f4f4, #ffffff);
+	background-image: -o-linear-gradient(top, #f4f4f4, #ffffff);
+	background-image: -ms-linear-gradient(top, #f4f4f4, #ffffff);
+	background-image: linear-gradient(to bottom, #f4f4f4, #ffffff);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.8), inset 0 1px 5px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.8), inset 0 1px 5px rgba(0,0,0,0.25);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.8), inset 0 1px 5px rgba(0,0,0,0.25);
+	
+}
+input.login_button {
+	width: 100px;
+	height: 36px;
+	font: bold 16.0px "Helvetica Neue";
+	border: 1px solid black;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#9eed63), to(#80cf45));
+	background-image: -webkit-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -moz-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -o-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -ms-linear-gradient(top, #9eed63, #80cf45);
+	background-image: linear-gradient(to bottom, #9eed63, #80cf45);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	width: 100%;
+	margin-top: 10px;
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .42);
+	
+	
+	-webkit-transition-property: width;
+	-webkit-transition-duration: 500ms;
+	
+	
+/* 	#9eed63
+	#80cf45 */
+}
+
+
+
+.login_form_row input {
+	width: 100%;
+	height: 40px;
+	padding: 10px;
+	margin: 0;
+	font: bold 14px Helvetica;
+	border: 0;
+	background-color: transparent;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.login_form_row {
+	border-top: 1px solid #d4d4d4;
+}
+
+
+#first_row {
+	border: 0;
+}
+
+:active, :focus {
+	outline: 0;
+	outline-style: none;
+	outline-width: 0;
+	-moz-outline-width: 0;
+}
+
+
+.menu_box {
+	margin-top: 1em;
+ 	border: 1px solid rgba(0,0,0,0.42);
+	border-radius: 8px;
+	background-color: rgba(0,0,0,0.15);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 2px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 2px rgba(0,0,0,0.2);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.2), inset 0 1px 2px rgba(0,0,0,0.2);
+	overflow: hidden;
+	
+	font-size: 0.9em;
+	font-weight: bold;
+}
+
+
+#user_pic {
+	width: 42px;
+	border: 1px #121314 solid;
+}
+
+
+.user_box {
+	margin: 0.5em 1em 0.5em 1em;
+}
+
+.user_name_box {
+	display: inline;
+	height: 100%;
+}
+
+.menu_box .user_box .user_name_box a {
+	display: inline;
+}
+
+.menu_box a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.menu_list li {
+	line-height: 1.3;
+	padding-top: 0.65em;
+	padding-bottom: 0.65em;
+	padding-left: 1em;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	border-top: 1px solid rgba(255,255,255,0.1);
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .42);
+}
+
+#menu_list_last {
+	border-bottom: 0;
+}
+
+
+#menu_list_first {
+	border-top: 0;
+}
+
+.bugfix {
+	text-align: center;
+	color: rgba(0,0,0,0.1);
+}
+
+
+/***************************
+*
+* Content box stuff
+*
+***************************/
+
+.dashboard_content_box {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-color: white;
+	border-radius: 8px;
+	border: 1px #9b9b9b solid;
+	min-height: 100%;
+	padding: 1.3em;
+}
+
+
+#paper_top_nav {
+	border-bottom: 1px #cacaca dashed;
+}
+
+
+#paper_top_nav li {
+	list-style: none;
+	display: inline;
+}
+
+
+.paper_content_container {
+	margin: 1.3em 0 1.3em 0;
+}
+
+
+
+.paper_lists {
+	border: 1em #cacaca solid;
+	border-radius: 4px;
+	border-spacing: 0;
+	width: 100%;
+}
+
+
+.paper_lists tr {
+	vertical-align: top;
+}
+
+.paper_lists td {
+	border-right: 1em #cacaca solid;
+	border-left: 0;
+}
+
+
+#list_published_td {
+	border: 0;
+}
+
+
+
+.paper_list_header {
+	
+	font-size: 22px;
+	font-weight: bold;
+	padding: 1em 1em 1em 0.9em;
+	font-variant: small-caps;
+	border-bottom: 1px #cacaca solid;
+}
+
+.paper_list {
+	/* border: 1px #ff5c15 dashed; */
+}
+
+
+.paper_list li {
+	list-style: none;
+	border-bottom: 1px #cacaca solid;
+	padding: 1.3em;
+}
+
+
+#new_idea_button {
+	font-family: "Helvetica Neue";
+	font-size: 18px;
+	font-variant: normal;
+	border: 1px solid black;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#9eed63), to(#80cf45));
+	background-image: -webkit-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -moz-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -o-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -ms-linear-gradient(top, #9eed63, #80cf45);
+	background-image: linear-gradient(to bottom, #9eed63, #80cf45);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .42);
+	
+	float: right;
+	padding: 0.2em;
+}
+
+#new_idea_button a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	height: 100%;
+}
+
+
+#list_published {
+	
+}
+
+
+/* ============================= */
+/* ! Editor form                 */
+/* ============================= */
+
+.editor_form_row {
+	margin-top: .65em;
+	margin-bottom: .65em;
+}
+
+.editor_form_row input {
+	width: 100%;
+	font: bold 18px "Helvetica Neue";
+	border: 0;
+}
+
+.editor_form_row input.error_row::-webkit-input-placeholder {
+  color: #f83c41;
+}
+
+.editor_form_row textarea {
+	border: 1px #999999 solid;
+	border-radius: 2px;
+	width: 100%;
+	font: normal 1em "Helvetica Neue";
+	margin-top: 1.3em;
+	resize: none;
+	min-height: 26em;
+}
+
+.editor_form_row span {
+	color: #999999;
+}
+
+#origin_label {
+	float: right;
+}
+
+.editor_button_box {
+	border: 6px #000 solid;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 1.3em 0;
+}
+
+
+.editor_button {
+	font: bold 14pt Helvetica;
+	padding: 0.65em;
+	margin: 0.3em;
+	width: 6.0em;
+	
+/* 	border: 1px solid black;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#9eed63), to(#80cf45));
+	background-image: -webkit-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -moz-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -o-linear-gradient(top, #9eed63, #80cf45);
+	background-image: -ms-linear-gradient(top, #9eed63, #80cf45);
+	background-image: linear-gradient(to bottom, #9eed63, #80cf45);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7); */
+	
+	border: 1px solid black;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#faf7f7), to(#c8c7c7));
+	background-image: -webkit-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -moz-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -o-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: -ms-linear-gradient(top, #faf7f7, #c8c7c7);
+	background-image: linear-gradient(to bottom, #faf7f7, #c8c7c7);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.75), inset 0 1px 0 rgba(255,255,255,0.7);
+
+	color: black;
+	
+}
+
+button.editor_button.button_chosen {
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#59c000), to(#59c000));
+	background-image: -webkit-linear-gradient(top, #59c000, #59c000);
+	background-image: -moz-linear-gradient(top, #59c000, #59c000);
+	background-image: -o-linear-gradient(top, #59c000, #59c000);
+	background-image: -ms-linear-gradient(top, #59c000, #59c000);
+	background-image: linear-gradient(to bottom, #59c000, #59c000);
+	
+}
+
+
+#delete_button {
+	border: 1px solid #a80002;
+	border-radius: 4px;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#d5575b), to(#c43033));
+	background-image: -webkit-linear-gradient(top, #d5575b, #c43033);
+	background-image: -moz-linear-gradient(top, #d5575b, #c43033);
+	background-image: -o-linear-gradient(top, #d5575b, #c43033);
+	background-image: -ms-linear-gradient(top, #d5575b, #c43033);
+	background-image: linear-gradient(to bottom, #d5575b, #c43033);
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.14), inset 0 1px 0 rgba(255,255,255,0.21);
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.14), inset 0 1px 0 rgba(255,255,255,0.21);
+	box-shadow: 0 1px 0 rgba(255,255,255,0.14), inset 0 1px 0 rgba(255,255,255,0.21);
+	
+	color: white;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .42);
+}
+
+
+#other_buttons {
+	border-color: transparent;
+}
+
+
+.editor_form_row .monospaced {
+	font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+}
+
+/* ============================= */
+/* ! Settings links              */
+/* ============================= */
+
+section .settings p {
+	padding-left: 1em;
+}
+
+section .settings a {
+	text-decoration: none;
+	color: #252525;
+	
+	margin-left: 0.15em;
+	margin-right: 0.15em;
+	
+	/* padding-top: 0.17em; */
+	padding-bottom: 0em;
+
+	padding-left: 0.4em;
+	padding-right: 0.4em;
+
+
+	border-color: #cccccc;
+	-webkit-border-radius: 0.65em; /* half the line height? */
+	-moz-border-radius: 0.65em;
+	border-radius: 0.65em;
+	border-width: 1px;
+	border-style: solid;
+
+
+	background: clear;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(248, 248, 248)), to(rgb(241, 241, 241)));
+	background: -moz-linear-gradient(top,  rgb(248, 248, 248),  rgb(241, 241, 241));
+	text-shadow: white 0px 1px 0
+}
+
+section .settings a:hover {
+	background: clear;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgb(241, 241, 241)), to(rgb(222, 222, 222)));
+	background: -moz-linear-gradient(top,  rgb(241, 241, 241),  rgb(222, 222, 222));
+}
+
+/* ============================= */
+/* ! Layout for mobile version   */
+/* ============================= */
+
+@media only screen and (max-width: 767px) {
+	
+	body {
+		box-shadow: inset 0 0 50px rgba(0,0,0,0.75);
+	}
+	
+	
+	.editor_button_box {
+		border: none;
+		display: block;
+		width: 100%;
+	}
+	
+	
+	.editor_button {
+		width: 100%;
+	}
+
+}
+
+
+/* ========================================== */
+/* ! Provide higher res assets for iPhone 4   */
+/* ========================================== */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) { 
+
+/*	.logo {
+		background: url(logo2x.jpg) no-repeat;
+		background-size: 212px 303px;
+	}*/
+
+}
