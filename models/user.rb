@@ -1,5 +1,5 @@
 require 'data_mapper'
-require "./models/article.rb"
+
 
 class User
 	include DataMapper::Resource
