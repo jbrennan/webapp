@@ -16,5 +16,4 @@ class User
 	property :display_name, String
 	property :display_image_url, String
 	
-	has n, :articles
 end
